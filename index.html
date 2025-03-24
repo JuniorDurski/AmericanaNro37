@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Dados y Escaleras</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="contenedor">
+        <h1>Simulador de Dados y Escaleras</h1>
+        <div class="botones">
+            <button onclick="lanzarDados()">Lanzar Dados</button>
+        </div>
+        <div class="botones">
+            <button onclick="lanzarHastaEscalera()">Lanzar hasta Escalera</button>
+        </div>
+        <div class="simulacion">
+            <input type="number" id="numSimulaciones" placeholder="Cantidad de simulaciones">
+        </div>
+        <div class="simulacion">
+            <button onclick="simularVariasVeces()">Simular N Veces</button>
+        </div>
+
+        <div id="dados-container">
+            <img class="dado" src="img/1.png" alt="Dado 1">
+            <img class="dado" src="img/2.png" alt="Dado 2">
+            <img class="dado" src="img/3.png" alt="Dado 3">
+            <img class="dado" src="img/4.png" alt="Dado 4">
+            <img class="dado" src="img/5.png" alt="Dado 5">
+        </div>
+
+        <p id="resultado">Resultado: -</p>
+        <p id="contador">Simulaciones: 0</p>
+        <p id="probabilidad">Probabilidad Experimental: 0.0000%</p>
+        <p id="progreso">Progreso: -</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
