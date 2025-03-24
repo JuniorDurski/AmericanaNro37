@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="contenedor">
-        <h1>Simulador de Dados y Escaleras</h1>
+        <h1>Simulador de Dados</h1>
         <div class="botones">
             <button onclick="lanzarDados()">Lanzar Dados</button>
         </div>
@@ -21,6 +21,10 @@
         <div class="simulacion">
             <button onclick="simularVariasVeces()">Simular N Veces</button>
         </div>
+        <p id="progreso">Progreso: -</p>
+        <div class="botones">
+            <button onclick="recargarPagina()">Recargar Página</button>
+        </div>
 
         <div id="dados-container">
             <img class="dado" src="img/1.png" alt="Dado 1">
@@ -32,8 +36,22 @@
 
         <p id="resultado">Resultado: -</p>
         <p id="contador">Simulaciones: 0</p>
+        <p id="contadorEscaleras">Escaleras Obtenidas: 0</p>
         <p id="probabilidad">Probabilidad Experimental: 0.0000%</p>
-        <p id="progreso">Progreso: -</p>
+        
+
+        <table id="tablaResultados">
+            <thead>
+                <tr>
+                    <th>Tiro</th>
+                    <th>Dados</th>
+                    <th>Escalera</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Aquí se irán agregando los resultados -->
+            </tbody>
+        </table>
     </div>
     <script src="script.js"></script>
 </body>
