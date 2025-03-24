@@ -29,7 +29,7 @@ h1 {
 }
 
 button {
-    background: blue;
+    background: orange;
     color: white;
     border: none;
     padding: 10px 15px;
@@ -40,7 +40,7 @@ button {
 }
 
 button:hover {
-    background: darkblue;
+    background: #ffc273;
 }
 
 input {
@@ -70,6 +70,27 @@ p {
     margin: 5px 0;
 }
 
+/* Tabla de resultados */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+td {
+    font-family: 'Courier New', Courier, monospace;
+}
+
 /* Responsive: Ajustes para pantallas pequeñas */
 @media (max-width: 480px) {
     .contenedor {
@@ -91,4 +112,3 @@ p {
         height: 40px;
     }
 }
-    
